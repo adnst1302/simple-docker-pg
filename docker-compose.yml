@@ -7,14 +7,14 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "9688:9688" # Map port 80 host ke port 8080 kontainer Go
+      - "9688:9688" # Map port 9688 host ke port 9688 kontainer Go
     environment:
       DB_HOST: db
       DB_PORT: 5432
       DB_USER: user
       DB_PASSWORD: password
       DB_NAME: mydatabase
-      PORT: 8080
+      PORT: 9688
     depends_on:
       - db
     networks:
