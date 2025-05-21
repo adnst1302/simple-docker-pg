@@ -1,6 +1,6 @@
 # Dockerfile
 # Gunakan image base Go yang lebih kecil
-FROM golang:1.22-alpine AS builder
+FROM golang:1.24-alpine AS builder
 
 # Atur working directory
 WORKDIR /app
